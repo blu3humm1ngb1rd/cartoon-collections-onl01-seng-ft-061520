@@ -34,14 +34,12 @@ end
 
 
 def find_the_cheese(snack)
-  other_snack = []
+  
    cheese_types = ["cheddar", "gouda", "camembert"]
    
   snack.find do |check_cheese| 
-  if check_cheese.include?(cheese_types.join(" "))
-  return cheese_types.join
-
-end 
+  check_cheese.include?(cheese_types)
+   
  end
 
 end
